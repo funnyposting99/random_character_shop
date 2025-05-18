@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waifu Shop Game</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="startScreen" class="screen active">
+    <div class="start-content">
+        <h1>Welcome to the Waifu Shop</h1>
+        <p>Buy characters using your coins. Click on the portraits on your left to pick the queen of your harem. You start with 3000 coins!</p>
+        <img src="img/fullbody/event/Pluepet.webp" alt="Waifu Shop Logo" class="start-image">
+        <button class="btn" onclick="onStartClicked()">Start</button>
+    </div>
+</div>
+
+<div id="nameScreen" class="screen">
+    <div class="name-content">
+        <h2>Enter Your Nickname</h2>
+        <input type="text" id="playerNameInput" placeholder="Your name" class="text-input">
+        <button class="btn" onclick="saveName()">Continue</button>
+    </div>
+</div>
+
+<div id="gameScreen" class="screen">
+    <div class="inventory" id="inventory"></div>
+    <div class="game-area">
+        <div id="playerInfo" style="margin-bottom: 10px; font-size: 18px; font-weight: bold;"></div>
+        <div class="char-container">
+            <div class="roll-button" id="roll-button">
+                <button class ='btn' onclick="reroll()">Roll 50G</button>
+            </div>
+            <img id="charImage" class="character" src="" alt="Character">
+            <div id="eventMessage" class="event-message"></div>
+        </div>
+        <div class="buttons" id="buyButtons"></div>
+        <div id="finish-button" style="text-align: center; margin-top: 20px;">
+            <button class ='btn' onclick="triggerFinish()" style="padding: 10px 20px; font-size: 18px;">Finish Game</button>
+        </div>
+    </div>
+
+    <div class="log" id="log"></div>
+</div>
+
+<script src="endScreen.js"></script>
+<script src="characters.js"></script>
+<script src="startGame.js"></script>
+<script src="reroll.js"></script>
+<script src="renderOptions.js"></script>
+<script src="buyCharacter.js"></script>
+<script src="inventory.js"></script>
+<script src="log.js"></script>
+
+</body>
+</html>

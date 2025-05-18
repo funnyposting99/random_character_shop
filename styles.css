@@ -1,0 +1,256 @@
+body { 
+  font-family: Arial, sans-serif; 
+  background: #f4f4f4; 
+  margin: 0; 
+  padding: 0; 
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.screen { 
+  display: none; 
+  padding: 20px; 
+  height: 100%; 
+  box-sizing: border-box; 
+}
+
+
+.screen.active { 
+  display: block; 
+}
+
+#gameScreen.active {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+#gameScreen.active {
+  display: flex;
+}
+
+#startScreen.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.start-content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.start-image {
+  width: 90%;
+  height: auto;
+  margin: 20px 0;
+}
+
+#buyButtons button,
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: grey;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover style only if not disabled */
+#buyButtons button:hover:not(:disabled),
+.btn:hover:not(:disabled) {
+  background-color: #317314;
+}
+
+/* Disabled style */
+#buyButtons button:disabled,
+#buyButtons button[disabled],
+.btn:disabled,
+.btn[disabled] {
+  background-color: #aaa;       /* Dull background */
+  color: #eee;                  /* Muted text */
+  cursor: not-allowed;          /* "no" icon */
+  opacity: 0.6;                 /* Slightly transparent */
+  pointer-events: none;        /* Disable clicks/hover */
+  transition: none;
+}
+
+#nameScreen {
+  height: 100%;
+}
+
+#nameScreen.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Container for name screen content */
+.name-content {
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+}
+
+/* Styled input */
+.text-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Inventory panel */
+.inventory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #e0e0e0;
+  width: 240px;          /* Set a fixed width */
+  min-width: 240px;
+  max-width: 240px;      /* Prevent resizing */
+  height: 100vh;
+}
+
+/* All portrait images */
+.inventory img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
+
+}
+
+/* Game area center */
+.game-area {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* center vertically */
+  position: relative;
+  padding: 20px;
+  overflow-y: auto;
+  background: #fff;
+}
+
+#playerInfo {
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.char-container {
+  position: relative;  /* keep for other positioning if needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* less gap, can adjust */
+  margin-bottom: 30px;
+}
+
+.roll-button {
+  position: relative; /* keep normal flow */
+  margin-bottom: 0;   /* no margin needed because gap handles spacing */
+}
+
+/* Buy buttons */
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button,
+.roll-button button,
+#finish-button button {
+  margin: 5px;
+}
+
+/* Log panel */
+.log {
+  flex: 1;
+  background: #f9f9f9;
+  border-left: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  min-width: 200px;
+}
+
+.log p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.char-container {
+  position: relative;
+  margin-bottom: 30px; /* Space below the character image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adds vertical spacing between roll button, image, and eventMessage */
+}
+
+.roll-button {
+  position: relative; /* Changed from absolute to keep spacing natural */
+  transform: none;
+  margin-bottom: 10px; /* Optional if you want extra space before image */
+}
+
+#finish-button {
+  margin-top: 40px; /* Extra space below the image and buy buttons */
+}
+
+.char-container img.character {
+  max-height: 400px;
+  max-width: 100%;
+}
+
+
+/* Color classes */
+/* Color classes with hover effect */
+.green-btn       { background-color: darkgreen !important; }
+.green-btn:hover { background-color: lightgreen !important; }
+
+.orange-btn       { background-color: darkorange !important; }
+.orange-btn:hover { background-color: rgb(254, 212, 133) !important; }
+
+.red-btn       { background-color: darkred !important; }
+.red-btn:hover { background-color: rgb(249, 122, 122) !important; }
+
+.blue-btn       { background-color: blue !important; }
+.blue-btn:hover { background-color: navy !important; }
+
+.pink-btn       { background-color: rgb(231, 102, 124) !important; }
+.pink-btn:hover { background-color: hotpink !important; }
+
+.purple-btn       { background-color: purple !important; }
+.purple-btn:hover { background-color: indigo !important; }
+
+.cyan-btn       { background-color: cyan !important; }
+.cyan-btn:hover { background-color: darkcyan !important; }
+
+.black-btn       { background-color: black !important; }
+.black-btn:hover { background-color: #333 !important; }
+
+
