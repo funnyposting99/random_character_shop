@@ -497,9 +497,6 @@ let characters = [
     { name: 'Uspira', image: 'img/fullbody/Uspira.webp', portrait: 'img/portrait/Uspira.webp', morurun: false, 
         options: { 'Brand New': false, 'Used': true, 'Damaged': true}
     },
-    { name: 'Vivid', image: 'img/fullbody/Vivid.webp', portrait: 'img/portrait/Vivid.webp', morurun: true, 
-        options: { 'Brand New': false, 'Used': true, 'Damaged': true }
-    },
     { name: 'Warg', image: 'img/fullbody/Warg.webp', portrait: 'img/portrait/Warg.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }, demon: true,
     },
