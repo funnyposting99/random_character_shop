@@ -465,8 +465,8 @@ function checkPapaya() {
 
     } else if (roll === 5) {
         // Give player 500 coins
-        coins += 500;
-        logAction(`Papaya giggled and threw 500G at you for no reason!`);
+        coins += 50;
+        logAction(`Papaya giggled and threw 50G at you for no reason!`);
     }
 
     updateInventory();

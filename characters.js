@@ -485,7 +485,7 @@ let characters = [
     { name: 'Tomato', image: 'img/fullbody/Tomato.webp', portrait: 'img/portrait/Tomato.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
-    { name: 'Topaz', image: 'img/fullbody/Topaz.webp', portrait: 'img/portrait/Topaz.webp', morurun: true, 
+    { name: 'Topaz', image: 'img/fullbody/Topaz.webp', portrait: 'img/portrait/Topaz.webp', morurun: true, katsuie: true,
         options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
     { name: 'Torako', image: 'img/fullbody/Torako.webp', portrait: 'img/portrait/Torako.webp', morurun: true, 
