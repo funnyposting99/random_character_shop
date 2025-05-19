@@ -149,7 +149,7 @@ let characters = [
     { name: 'Hornet', image: 'img/fullbody/Hornet.webp', portrait: 'img/portrait/Hornet.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }, demon: true,
     },
-    { name: 'Huousenurse', image: 'img/fullbody/Housenurse.webp', portrait: 'img/portrait/Housenurse.webp', morurun: true, 
+    { name: 'Housenurse', image: 'img/fullbody/Housenurse.webp', portrait: 'img/portrait/Housenurse.webp', morurun: true, 
         options: { 'Brand New': false, 'Used': false, 'Damaged': true }
     },
     { name: 'Hunty', image: 'img/fullbody/Hunty.webp', portrait: 'img/portrait/Hunty.webp', morurun: true, 
