@@ -144,7 +144,7 @@ function checkMedusa() {
                 item.condition = 'Damaged (JC)';
             } else if (item.condition === 'Brand New (Big Boobs)') {
                 item.condition = 'Damaged (Big Boobs)';
-            } else if (item.condition === 'Brand New' || item.condition === 'Used' || 'SEEN Goods') {
+            } else if (item.condition === 'Brand New' || item.condition === 'Used' || item.condition === 'SEEN Goods') {
                 item.condition = 'Damaged';
             } else {
                 return; // Do nothing for other conditions
