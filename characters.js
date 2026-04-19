@@ -71,6 +71,9 @@ let characters = [
     { name: 'Calory', image: 'img/fullbody/Calory.webp', portrait: 'img/portrait/Calory.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
+    { name: 'Cecil', image: 'img/fullbody/Cecil.webp', portrait: 'img/portrait/Cecil.webp', morurun: true, 
+        options: { 'Brand New': false, 'Used': true, 'Damaged': true }
+    },
     { name: 'Cessna', image: 'img/fullbody/Cessna.webp', portrait: 'img/portrait/Cessna.webp', morurun: false, 
         options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
@@ -248,7 +251,7 @@ let characters = [
     { name: 'Leila', image: 'img/fullbody/Leila.webp', portrait: 'img/portrait/Leila.webp', morurun: true, 
         options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
-    { name: 'Lelikov', image: 'img/fullbody/Lelikov.webp', portrait: 'img/portrait/Lelikov.webp', morurun: true, 
+    { name: 'Lelikov', image: 'img/fullbody/Lelikov.webp', portrait: 'img/portrait/Lelikov.webp', morurun: true, katsuie: true,
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
     { name: 'Lia', image: 'img/fullbody/Lia.webp', portrait: 'img/portrait/Lia.webp', morurun: false, 
@@ -517,6 +520,9 @@ let characters = [
     },
     { name: 'Urza', image: 'img/fullbody/Urza.webp', portrait: 'img/portrait/Urza.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true, 'Broken': true }
+    },
+    { name: 'Uzume', image: 'img/fullbody/Uzume.webp', portrait: 'img/portrait/Uzume.webp', morurun: true, 
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
     { name: 'Uspira', image: 'img/fullbody/Uspira.webp', portrait: 'img/portrait/Uspira.webp', morurun: false, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true}
