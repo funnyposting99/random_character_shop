@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Harem Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- START SCREEN -->
+<div id="startScreen" class="screen active">
+    <div class="start-content">
+        <h1>Fire Emblem Harem Shop</h1>
+        <p>Buy characters using your coins.<br>
+            Each character has a price, and you can only purchase them if you have enough coins.<br>
+            Click on the portraits on your left to pick the queen of your harem.<br>
+            You start with 3000 coins!</p>
+        <img src="menu_picture.webp" alt="Menu Picture" class="menu-image">
+        <button class="btn btn-finish" onclick="onStartClicked()">Start</button>
+    </div>
+</div>
+
+<!-- NAME SCREEN -->
+<div id="nameScreen" class="screen">
+    <div class="name-content">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="playerNameInput" placeholder="Your name" class="text-input">
+        <button class="btn btn-finish" onclick="saveName()">Continue</button>
+    </div>
+</div>
+
+<!-- GAME SCREEN -->
+<div id="gameScreen" class="screen">
+    <aside class="inventory" id="inventory"></aside>
+
+    <main class="game-area">
+        <div class="top-bar">
+            <span id="playerInfo"></span>
+        </div>
+
+        <div class="char-container">
+            <button class="btn btn-roll" onclick="reroll()">Roll 50G</button>
+            <img id="charImage" class="character" src="" alt="Character">
+        </div>
+
+        <div class="buy-buttons" id="buyButtons"></div>
+
+        <button class="btn btn-finish" onclick="triggerFinish()">Finish Game</button>
+    </main>
+</div>
+
+<!-- END SCREEN (overlays game) -->
+<div id="endScreen" class="screen">
+    <div class="end-content">
+        <h1>YOUR HAREM</h1>
+        <p id="endSummary"></p>
+        <div class="end-inventory" id="endInventory"></div>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
