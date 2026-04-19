@@ -230,6 +230,9 @@ let characters = [
     { name: 'Kou', image: 'img/fullbody/Kou.webp', portrait: 'img/portrait/Kou.webp', morurun: true, katsuie: true,
         options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
+    { name: 'Krutche', image: 'img/fullbody/Krutche.webp', portrait: 'img/portrait/Krutche.webp', morurun: true, katsuie: true,
+        options: { 'Brand New': false, 'Used': false, 'Damaged': true }
+    },
     { name: 'Kurohime', image: 'img/fullbody/Kurohime.webp', portrait: 'img/portrait/Kurohime.webp', morurun: false, 
         options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
@@ -244,6 +247,9 @@ let characters = [
     },
     { name: 'Leila', image: 'img/fullbody/Leila.webp', portrait: 'img/portrait/Leila.webp', morurun: true, 
         options: { 'Brand New': false, 'Used': true, 'Damaged': true }
+    },
+    { name: 'Lelikov', image: 'img/fullbody/Lelikov.webp', portrait: 'img/portrait/Lelikov.webp', morurun: true, 
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
     { name: 'Lia', image: 'img/fullbody/Lia.webp', portrait: 'img/portrait/Lia.webp', morurun: false, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
@@ -311,6 +317,9 @@ let characters = [
     { name: 'Miracle', image: 'img/fullbody/Miracle.webp', portrait: 'img/portrait/Miracle.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
+    { name: 'Mix', image: 'img/fullbody/Mix.webp', portrait: 'img/portrait/Mix.webp', morurun: true, katsuie: true,
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true }
+    },
     { name: 'Mysteria', image: 'img/fullbody/Mysteria.webp', portrait: 'img/portrait/Mysteria.webp', morurun: true, 
         options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
@@ -328,6 +337,9 @@ let characters = [
     },
     { name: 'Nikkou', image: 'img/fullbody/Nikkou.webp', portrait: 'img/portrait/Nikkou.webp', morurun: true, 
         options: { 'Brand New': false, 'Used': false, 'Damaged': true }
+    },
+    { name: 'Nimitz', image: 'img/fullbody/Nimitz.webp', portrait: 'img/portrait/Nimitz.webp', morurun: false, 
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
     { name: 'Noah', image: 'img/fullbody/Noah.webp', portrait: 'img/portrait/Noah.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
@@ -374,6 +386,9 @@ let characters = [
     { name: 'Pulptenks', image: 'img/fullbody/Pulptenks.webp', portrait: 'img/portrait/Pulptenks.webp', morurun: false, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
+    { name: 'Quelplan', image: 'img/fullbody/Quelplan.webp', portrait: 'img/portrait/Quelplan.webp', morurun: true, 
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true }, demon: true
+    },
     { name: 'Ran', image: 'img/fullbody/Ran.webp', portrait: 'img/portrait/Ran.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
@@ -400,6 +415,9 @@ let characters = [
     },
     { name: 'Rose', image: 'img/fullbody/Rose.webp', portrait: 'img/portrait/Rose.webp', morurun: false, 
         options: { 'Brand New': false, 'Used': false, 'Damaged': true }, specialPrices: { 'Damaged': 100 }
+    },
+    { name: 'Ruberan', image: 'img/fullbody/Ruberan.webp', portrait: 'img/portrait/Ruberan.webp', morurun: false, 
+        options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
     { name: 'Ryouma', image: 'img/fullbody/Ryouma.webp', portrait: 'img/portrait/Ryouma.webp', morurun: true, 
         options: { 'Female': true, 'Futa': true, 'Male': true }
@@ -441,7 +459,7 @@ let characters = [
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
     { name: 'Shariela', image: 'img/fullbody/Shariela.webp', portrait: 'img/portrait/Shariela.webp', morurun: false, 
-        options: { 'Brand New': false, 'Used': true, 'Damaged': true }
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
     { name: 'Sheila', image: 'img/fullbody/Sheila.webp', portrait: 'img/portrait/Sheila.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
@@ -467,6 +485,9 @@ let characters = [
     { name: 'Ssusal', image: 'img/fullbody/Ssusal.webp', portrait: 'img/portrait/Ssusal.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }, demon: true,
     },
+    { name: 'Sushinu', image: 'img/fullbody/Sushinu.webp', portrait: 'img/portrait/Sushinu.webp', morurun: true, 
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true }, demon: true,
+    },
     { name: 'Suzaku', image: 'img/fullbody/Suzaku.webp', portrait: 'img/portrait/Suzaku.webp', morurun: true, 
         options: { 'Female': true, 'Male': true }
     },
@@ -485,6 +506,9 @@ let characters = [
     { name: 'Tomato', image: 'img/fullbody/Tomato.webp', portrait: 'img/portrait/Tomato.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
     },
+    { name: 'Tone', image: 'img/fullbody/Tone.webp', portrait: 'img/portrait/Tone.webp', morurun: true, 
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true }
+    },
     { name: 'Topaz', image: 'img/fullbody/Topaz.webp', portrait: 'img/portrait/Topaz.webp', morurun: true, katsuie: true,
         options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
@@ -495,7 +519,7 @@ let characters = [
         options: { 'Brand New': true, 'Used': true, 'Damaged': true, 'Broken': true }
     },
     { name: 'Uspira', image: 'img/fullbody/Uspira.webp', portrait: 'img/portrait/Uspira.webp', morurun: false, 
-        options: { 'Brand New': false, 'Used': true, 'Damaged': true}
+        options: { 'Brand New': true, 'Used': true, 'Damaged': true}
     },
     { name: 'Warg', image: 'img/fullbody/Warg.webp', portrait: 'img/portrait/Warg.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }, demon: true,
@@ -528,7 +552,7 @@ let characters = [
 
 let ghosts = [
     { name: 'Full', image: 'img/fullbody/Full.webp', portrait: 'img/portrait/Full.webp', morurun: true, 
-        options: { 'Brand New': true, 'Used': true, 'Damaged': true }
+        options: { 'Brand New': false, 'Used': true, 'Damaged': true }
     },
         { name: 'Modern', image: 'img/fullbody/Modern.webp', portrait: 'img/portrait/Modern.webp', morurun: true, 
         options: { 'Brand New': true, 'Used': true, 'Damaged': true }
