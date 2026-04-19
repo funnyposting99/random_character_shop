@@ -155,7 +155,7 @@ function buyCharacter(condition, price) {
     coins -= price;
 
     // Generate portrait by cropping center-top square from fullbody via canvas
-    const portraitDataUrl = createPortrait(currentChar.image, (dataUrl) => {
+    createPortrait(currentChar.image, (dataUrl) => {
         inventory.push({
             id: currentChar.id,
             name: currentChar.name,
@@ -163,10 +163,9 @@ function buyCharacter(condition, price) {
             condition: condition
         });
         updateInventory();
+        updateInfo();
+        reroll(true);
     });
-
-    updateInfo();
-    reroll(true);
 }
 
 /**
